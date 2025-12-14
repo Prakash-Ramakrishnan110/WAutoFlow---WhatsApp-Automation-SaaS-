@@ -1,0 +1,24 @@
+Create a file named .env in the backend folder with this content:
+
+PORT=5000
+NODE_ENV=development
+DATABASE_URL=postgresql://postgres:postgres@localhost:5432/wautoflow
+JWT_SECRET=your-super-secret-jwt-key-change-in-production-min-32-chars-12345
+JWT_EXPIRES_IN=7d
+
+# WhatsApp Cloud API (optional for now)
+WHATSAPP_API_URL=https://graph.facebook.com/v18.0
+WHATSAPP_PHONE_NUMBER_ID=your-phone-number-id
+WHATSAPP_ACCESS_TOKEN=your-access-token
+WHATSAPP_VERIFY_TOKEN=your-verify-token
+
+# Stripe (optional for now)
+STRIPE_SECRET_KEY=sk_test_your_stripe_secret_key
+STRIPE_WEBHOOK_SECRET=whsec_your_webhook_secret
+
+# Razorpay (optional for now)
+RAZORPAY_KEY_ID=your_razorpay_key_id
+RAZORPAY_KEY_SECRET=your_razorpay_key_secret
+
+IMPORTANT: Replace 'postgres:postgres' in DATABASE_URL with your PostgreSQL username:password
+
